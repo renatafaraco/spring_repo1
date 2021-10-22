@@ -1,0 +1,8 @@
+site_name: "spring_repo1"
+site_description: "First repo spring"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
