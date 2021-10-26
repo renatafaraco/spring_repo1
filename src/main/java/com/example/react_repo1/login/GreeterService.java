@@ -1,4 +1,4 @@
-package com.example.com.react_repo1.login;
+package com.example.react_repo1.login;
 
 import com.example.com.react_repo1.login.proto.GreeterGrpc;
 import com.example.com.react_repo1.login.proto.GreeterOuterClass;
@@ -9,8 +9,9 @@ import org.lognet.springboot.grpc.GRpcService;
 public class GreeterService extends GreeterGrpc.GreeterImplBase {
 
   @Override
-  public void sayHello(final GreeterOuterClass.HelloRequest request,
-                       final StreamObserver<GreeterOuterClass.HelloReply> responseObserver) {
+  public void sayHello(
+      final GreeterOuterClass.HelloRequest request,
+      final StreamObserver<GreeterOuterClass.HelloReply> responseObserver) {
     final GreeterOuterClass.HelloReply.Builder replyBuilder =
         GreeterOuterClass.HelloReply.newBuilder().setMessage("Hello " + request.getName());
     responseObserver.onNext(replyBuilder.build());

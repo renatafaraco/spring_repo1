@@ -1,4 +1,4 @@
-FROM openjdk:11-alpine
+FROM openjdk:11
 ENTRYPOINT ["/usr/bin/spring_repo1.sh"]
 
 COPY spring_repo1.sh /usr/bin/spring_repo1.sh
