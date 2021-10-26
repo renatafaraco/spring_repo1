@@ -1,5 +1,11 @@
 FROM openjdk:11
-ENTRYPOINT ["/usr/bin/spring_repo1.sh"]
 
-COPY spring_repo1.sh /usr/bin/spring_repo1.sh
-COPY target/spring_repo1.jar /usr/share/spring_repo1/spring_repo1.jar
+
+COPY target/spring_repo1.jar /spring_repo1/spring_repo1.jar
+WORKDIR /spring_repo1
+
+EXPOSE 8080
+
+ENTRYPOINT ["java"]
+
+CMD ["-jar", "spring_repo1.jar"]
