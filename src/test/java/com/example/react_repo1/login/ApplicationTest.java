@@ -1,4 +1,4 @@
-package com.example.com.react_repo1.login;
+package com.example.react_repo1.login;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
