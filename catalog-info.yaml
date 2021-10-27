@@ -16,3 +16,5 @@ spec:
   owner: "user:guest"
   providesApis:
     - artist-api
+    - another-test-api
+    - test-api
