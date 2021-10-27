@@ -13,6 +13,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: "backstage"
+  owner: "user:guest"
   providesApis:
     - artist-api
