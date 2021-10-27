@@ -13,7 +13,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: "user:guest"
+  owner: team-a
   providesApis:
     - artist-api
     - another-test-api
